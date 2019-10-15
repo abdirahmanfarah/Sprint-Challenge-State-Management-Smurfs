@@ -1,11 +1,6 @@
 import { START_FETCHING, FETCH_SUCCESS, FETCH_FAILURE } from '../actions/index'
 const initialState = {
-  smurfs : {
-      name: 'Brainey',
-      age: 200,
-      height: '5cm',
-      id: 0
-    },
+    smurfs: [],
     isFetching: false,
     error: ''
   
@@ -32,6 +27,10 @@ const reducer = (state = initialState, action) => {
         return {
          ...state,
         isFetching:false
+          }
+      case "ADD_SMURF":
+          let newSmurf = {
+            smurf:action.payload
           }
     default:
       return state;
