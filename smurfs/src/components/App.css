@@ -14,15 +14,15 @@
   color: white;
 }
 
-.App-title {
-  font-size: 1.5em;
+.smurf-container {
+display:flex;
+justify-content: center;
+flex-wrap:wrap;
+width:80%;
+margin:auto;
 }
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.smurf-card {
+  background:grey;
+  margin:auto;
+  padding:20px;
 }
